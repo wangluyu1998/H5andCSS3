@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>毕业生信息</title>
+    <style>
+        #side1{
+            width:500px;
+            height:120px;
+        }
+        #side2{
+            width:500px;
+            height:90px;
+        }
+        #titl{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <h1>毕业生信息</h1>
+    <fieldset id="side1">
+        <legend id="titl">
+            学生信息
+        </legend>
+        姓&nbsp;&nbsp;名 <input type="text" name="name1" placeholder="请输入姓名" autofocus="autofocus" required/>
+        <span style="color:red">*</span>
+        </br>
+        学&nbsp;&nbsp;号 <input type="number" name="sno" placeholder="请输入学号" min="0" required/>
+        <span style="color:red">*</span>
+        </br>
+        手&nbsp;&nbsp;机 <input type="tel" name="phone" placeholder="请输入手机号" required/>
+        <span style="color:red">*</span>
+        </br>
+        邮&nbsp;&nbsp;箱 <input type="email" name="e-mail" placeholder="请输入邮箱地址" required/>
+        <span style="color:red">*</span>
+    </fieldset>
+    </br>
+    <fieldset id="side2">
+        <legend id="titl">
+            录取信息
+        </legend>
+        录取学校<input type="search" name="school" list="names"/>
+        </br>
+        入学成绩<input type="number" name="score" min="0"/>
+        </br>
+        入学时间<input type="date" name="datademo"/>
+        <datalist id="names">
+            <option>河北师范大学</option>
+			<option>北京大学</option>
+			<option>清华大学</option>
+			<option>河北科技大学</option>
+            <option>河北地质大学</option>
+            <option>河北师范大学汇华学院</option>
+		</datalist>
+    </fieldset>
+    </br>
+    <input type="submit" name="submit" value="提交"/>
+    </form>
+</body>
+</html>
