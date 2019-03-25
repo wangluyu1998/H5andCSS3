@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>web存储</title>
+    <style>
+        #searchDetail{
+            height:35px;
+            width:220px;
+        }
+        #btn{
+            width:120px;
+            height:35px;
+        }
+        #searcharea{
+            width:350px;
+            height:40px;
+        }
+        #historyarea{
+            width:350px;
+            height:100px;
+        }
+        #clearbtn{
+            float:right;
+            width:22px;
+            height:22px;
+            color:white;
+            background-color: gray;
+            opacity: 0.3;
+            text-align: center;
+            border:1px white;
+        }
+        #details{
+            float:left;
+            width:350px;
+            height:80px;
+        }
+        .node{
+            background: rgb(228, 228, 228);
+            margin-right:5px;
+            margin-bottom:8px;
+            padding: 0 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="searcharea">
+        <input id="searchDetail" type="text" name="search" placeholder="请输入想查找的商品"/>
+        <input type="button" id="btn" value="搜索"/>
+    </div>
+    <div id="historyarea">
+        <a>最近搜索</a>
+        <button id="clearbtn" onclick="clearStorage('details')">X</button>
+        <div id="details"></div>
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload=loadStorage();
+
+    function clearBefore(){
+        var details = document.getElementById('details');
+        var childs=details.childNodes;
+        for(var i=childs.length-1;i>=0;i--){     
+            details.removeChild(details.lastChild);
+        }
+    }
+
+    btn.onclick=function saveStorage(){
+        clearBefore();
+        var searchDetail = document.getElementById("searchDetail");
+        var time = new Date().getTime();
+        for(var i=0;i<localStorage.length;i++){
+                var j = localStorage.key(i);
+                if(searchDetail.value == localStorage.getItem(j)){
+                    localStorage.removeItem(j);
+                }
+            }
+        localStorage.setItem(time,searchDetail.value);
+        searchDetail.value = "";
+        loadStorage('details');
+        
+    }
+
+    function loadStorage(){
+        for(var i=localStorage.length-1;i>=0;i--){
+            var key = localStorage.key(i);
+            var newNode=document.createElement('text');
+            newNode.innerHTML=localStorage.getItem(key);
+            newNode.className="node";
+            details.appendChild(newNode);
+        }
+    }
+
+    function clearStorage(){
+        localStorage.clear();
+        var details=document.getElementById('details');
+        details.innerHTML="";
+    }
+</script>
+</html>
