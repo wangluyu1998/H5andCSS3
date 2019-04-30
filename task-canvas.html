@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>canvas</title>
+    <style>
+        #box{
+            width:300px;
+            height:150px;
+            background-color:#fff;
+        }
+        #show{
+            width:300px;
+            height:150px;
+            z-index: 0;
+            position:absolute;
+            text-align:center;
+            line-height:150px;
+            font-size:30px;
+            color:rgb(199, 78, 78);
+        }
+        canvas{
+            z-index: 1;
+            position:absolute;
+            border:2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="show"></div>
+        <canvas id="canvas" width="300" height="150"></canvas>   
+    </div>
+</body>
+<script>
+    var canvas=document.getElementById("canvas");
+    var context=canvas.getContext("2d");
+    var show=document.getElementById("show");
+    
+    //刮开显示文字及随机变换效果：
+    var midi=new Array("谢谢惠顾","特等奖","再来一杯","第二杯半价");
+    show.innerHTML=midi[parseInt(Math.random()*4)];
+
+    //canvas绘制涂层：
+    context.beginPath();
+    context.fillStyle='gray';
+    context.fillRect(0,0,300,150);
+    context.closePath();
+
+    //单击鼠标:
+    canvas.onclick=function(e){
+        context.globalCompositeOperation = "destination-out";
+        var x=e.clientX;
+        var y=e.clientY;
+        context.beginPath();
+        context.arc(x,y,25,0,Math.PI*2);
+        context.fill();
+        context.closePath();
+        judgeIfClear();
+    }
+
+    //点击鼠标后拖动鼠标，有涂抹的效果：
+    canvas.onmousedown=function(){
+        canvas.onmousemove=function(e){
+            context.globalCompositeOperation = "destination-out";
+            var x=e.clientX;
+            var y=e.clientY;
+            context.beginPath();
+            context.arc(x,y,25,0,Math.PI*2);
+            context.fill();
+            context.closePath();
+            judgeIfClear();
+        }
+    }
+    //弹开鼠标，不再有涂抹的效果：
+    canvas.onmouseup=function(){
+        canvas.onmousemove=function(){}
+    }
+    //涂抹85%之后，去掉涂层：
+    function judgeIfClear(){      
+        var imgData=context.getImageData(0,0,300,150);
+        var count=0;
+        for(var i=3;i<imgData.data.length;i+=4){
+            if(imgData.data[i]==0){
+                count++;
+            }
+        }
+        if(count>=0.85*150*300){
+            context.clearRect(0,0,300,150);
+        }
+    }
+</script>
+</html>
