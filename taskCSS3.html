@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3变形与动画</title>
+    <style>
+        .box{
+            width:300px;
+            height:400px;
+            position:relative;
+            border:1px solid gray;
+            box-shadow: 2px 2px 5px gray;
+            overflow:hidden;
+        }
+        .box2{
+            width:300px;
+            height:250px;
+            position:absolute;
+            left:0;
+            top:0;
+            background-color: black;
+            opacity: 0;
+        }
+        .intros{
+            width:300px;
+            height:300px;
+            position:absolute;
+            top:230px;
+            transition: transform 0.5s ease-in-out;
+        }
+        .alt{
+            width:40px;
+            height:20px;
+            background: rgb(245, 131, 25);
+            color: #fff;
+            font-size:13px;
+            text-align:center;
+        }
+        .text{
+            width:300px;
+            height:200px;
+            background-color: #fff;
+        }
+        .text0 div{
+            width:260px;
+            height:15px;
+            padding: 10px 20px;
+            line-height: 20px;
+        }
+        .text1{
+            opacity: 0;
+        }
+        .text2{
+            width:260px;
+            height:20px;
+            padding:0 20px;
+            position:absolute;
+            bottom:0;
+            color:gray;
+            font-size:10px;
+        }
+        img{
+            transition:all 0.5s;
+        }
+        .box:hover img{
+            transform:scale(1.2);
+        }
+        .box:hover .box2{
+            opacity: 0.4;
+        }
+        .box:hover .intros{
+            transform: translateY(-90px);
+            transition: transform 0.5s ease-in-out;
+        }
+        .box:hover .text1{ 
+            animation: myAnimation 0.5s 0.5s;
+            animation-fill-mode: forwards;
+        } 
+        @keyframes myAnimation{
+            0% {
+                opacity: 0;
+            } 100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="zhanqiao.jpg" width="300" height="250"/>
+        <div class="box2"></div>
+        <div class="intros">
+            <div class="alt">照片</div>
+            <div class="text">
+                <div class="text0">
+                    <div style="font-size: 20px; font-weight:bold">青岛栈桥</div>
+                    <div style="font-size: 16px; color: rgb(245, 131, 25)">国家AAAA级旅游景区</div>
+                    <div class="text1" style="font-size:12px; color:gray">青岛栈桥是青岛海滨风景区的景点之一，是国务院于1982年首批公布的国家级风景名胜区，也是首批国家AAAA级旅游景区。
+                    青岛栈桥位于游人如织的青岛中山路南端，桥身从海岸探入如弯月般的青岛湾深处。桥身供游人参观并在此停靠旅游船，由此乘船可看海上青岛。</div>
+                </div>
+            </div>
+        </div>
+        <div class="text2">123评论</div>
+    </div>
+</body>
+</html>
