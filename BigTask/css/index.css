@@ -246,7 +246,7 @@ input{
 /*机场接送*/
 .bus-service{
     position:relative;
-    width:70%;
+    width:73%;
     height:350px;
     margin: 0 auto;
     padding-top: 15px;
@@ -322,10 +322,14 @@ input{
 #routeleft{
     float:left;
     height:810px;
+    padding-left:25px;
+    padding-right:0;
 }
 #routeright{
     float:left;
     height:810px;
+    padding-left:3px;
+    padding-right:2px;
 }
 
 .rd1{
@@ -448,10 +452,12 @@ input{
 #vdleft{
     height:100%;
     float:left;
+    padding:0;
 }
 #vdmidl{
     height:100%;
     float:left;
+    padding:0 2px;
 }
 .vd1{
     position:relative;
@@ -477,6 +483,7 @@ input{
 #vdright{
     float:left;
     height:100%;
+    padding-left:2px;
 }
 .vd2{
     float:left;
@@ -807,6 +814,9 @@ input{
         width:100%;
         height:100%;
     }
+    #intro .h44{
+        display:none;
+    }
     .text11{
         display:none;
     }
@@ -850,14 +860,7 @@ input{
     .bus-service2{
         width:100%;
         height:150px;
-        margin:0 auto;
         margin-bottom:12px;
-    }
-    .bus-service3{
-        width:80%;
-        height:90%;
-        margin:0 auto;
-        padding-top:7%;
     }
     .contain1{
         width:90%;;
@@ -865,27 +868,39 @@ input{
     }
     .contain2{
         width:90%;
+        height:520px;
     }
-    .logo1{
+    #routeleft{
+        padding-left:15px;
+        padding-right:0;
+    }
+    #vdmidl,#vdleft{
+        padding-right:0;
+    }
+    .bus-service2 .logo1{
         float: left;
-        width:25%;
+        width:22%;
         height:75%;
+        margin-top:7%;
+        margin-left:3%;
     }
     .bus-service2 .wenzi{
         float:left;
         width:50%;
-        height:12%;
+        height:70%;
+        margin-left:2%;
+        margin-top:5%;
     }
     .bus-service2 .wenzi1{
         color:#1c5080;
         font-size: 20px;
     }
     .bus-service2 button{
-        width:25%;
-        height:30%;
+        width:18%;
+        height:25%;
         color:#666666;
-        font-size:16px;
-        margin-top:5%;
+        font-size:15px;
+        margin-top:12%;
         border:1px solid #666666;
         border-radius: 5px;
         background-color: #fff;
@@ -894,9 +909,6 @@ input{
         width:100%;
         height:15px;
         background-color:rgb(235, 231, 231);
-    }
-    .contain1{
-        background-color: #fff;
     }
     .contain1 .rd1{
         margin-bottom:15px;
@@ -939,9 +951,6 @@ input{
     #visadvice{
         display:none;
     }
-    .contain2{
-        height:520px;
-    }
     .contain2 .visadvice1{
         width:150px;
         height:40px;
@@ -955,6 +964,14 @@ input{
     }
     #visa{
         height:320px;
+    }
+    #visa .price1{
+        height:20%;
+        padding:8px;
+    }
+    #visa .price5{
+        height:30%;
+        padding:8px;
     }
     .vd3,.vd4,.vd5,#vdright{
         display:none;
@@ -989,7 +1006,10 @@ input{
         color:black;
         padding-right:0;
     }
-    #intro h4{
+    #intro .h4{
+        display:none;
+    }
+    #intro .h44{
         padding-top:5%;
         text-align:center;
     }
@@ -1022,8 +1042,8 @@ input{
     }
     .strength{
         width:100%;
-        height:5%;
-        padding:10% 37%;
+        height:8%;
+        padding:6% 37%;
         background-color: #fff;
     }
     .row3,.row1,.row2{
@@ -1041,8 +1061,5 @@ input{
         position: absolute;
         left:30%;
         top:25%;
-    }
-    .route{
-        padding:0;
     }
 }
