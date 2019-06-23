@@ -1,0 +1,1048 @@
+ul li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+/*顶栏*/
+.header{
+    position:fixed;
+    top:0;
+    z-index:100;
+    float:left;
+    width:100%;
+    height:40px;
+    background-color: black;
+    margin: 0 auto;
+}
+.tell{
+    float:left;
+    margin-left:65%;
+    width:150px;
+    height:40px;
+    line-height: 40px;
+}
+.entrance{
+    float:left;
+    width:100px;
+    height:40px;
+    margin-left:100px;
+    line-height:40px;
+}
+.entrance a{
+    color:white;
+} 
+/* 导航 */
+.wrapper{
+    margin:0 auto;
+    padding-bottom:100px;
+}
+.wrapper1{
+    margin-left:200px;
+}
+.navbar-nav li{
+    padding-left:20px;
+}
+@media screen and (max-width:750px){
+    .wrapper1{
+        margin:0;
+    }
+    .navbar-nav li{
+        padding:0;
+    }
+}
+#top1{
+    top:40px;
+    border:1px solid #fff;
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a{
+    background:transparent;
+    color:#cb5405;
+    border-bottom:2px solid #cb5405;
+}
+.navbar-default .navbar-nav>.active>a:hover{
+    background:transparent;
+    color:#cb5405;
+}
+.navbar-default .navbar-nav>.active>a:focus{
+    background:transparent;
+    color:#cb5405;
+}
+.navbar-default a:hover{
+    background:transparent;
+    color:#cb5405;
+}
+
+.navbar-header img{
+    float:left;
+    margin-right:100px;
+    margin-top:5px;
+}
+.navbar-btn{
+    width:80px;
+    height:32px;
+    margin-top:9px;
+    margin-left:65%;
+    color:white;
+    border:1px solid rgb(228, 91, 13);
+    background-color: rgb(228, 91, 13);
+    border-radius: 5px;
+}
+#col-1 li{
+    padding-top:10px;
+    padding-right:10px;
+    font-size:18px;
+    border-bottom:2px solid white;
+}
+#col-1 li:hover a{
+    color:rgb(228, 91, 13);
+}
+#col-1 li:hover a{
+    border-bottom:2px solid rgb(228, 91, 13);
+}
+/*轮播*/
+#slideshow{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+#img0{
+    width:100%;
+    height:450px;
+    overflow:hidden;
+}
+#img1{
+    max-width: none;
+    width: 100%;
+    min-height: 100%;
+} 
+.detail1{
+    position: absolute;
+    top:15%;
+    left:15%;
+    color:white;
+    font-size: 35px;
+}
+.detail2{
+    position: absolute;
+    top:35%;
+    left:15%;
+    color:white;
+    font-size:18px;
+}
+.detail3{
+    position: absolute;
+    top:45%;
+    left:15%;
+    color:white;
+    font-size:18px;
+}
+.sousuo{
+    z-index:999;
+    position: absolute;
+    width:50%;
+    height:15%;
+    top:70%;
+    left:25%;
+    font-size:18px;
+    border:2px solid rgb(78, 78, 78);
+    border-radius:10px;
+}
+.destination{
+    float:left;
+    width:25%;
+    height:99%;
+    background-color:rgb(216, 210, 210);
+    border-radius:10px 0 0 10px; 
+}
+.destination img{
+    line-height:50px;
+    margin-left:30%;
+    margin-right:5%;
+    margin-top:3%;
+}
+.destination a{
+    line-height:60px;
+    color:#7d7d7f;
+}
+input{
+    float:left;
+    width:50%;
+    height:99%;
+    color:black;
+    border:1px solid white;
+}
+.search{
+    float:left;
+    width:25%;
+    height:99%;
+    background-color: rgb(236, 104, 16);
+    border-radius:0 10px 10px 0;
+}
+.search img{
+    margin-top:10%;
+    margin-left:40%;
+}
+.carousel-caption{
+    top: 2%;
+    left: 10%;
+    right: auto;
+    bottom: auto;
+}
+.carousel-caption>h3{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.carousel-caption>p{
+    width: fit-content;
+    font-size: 15px;
+    text-align: left;
+}
+.carousel-caption .p1{
+    display:none;
+}
+@media screen and (max-width:750px){
+    #slideshow{
+        height: 250px;
+        overflow: hidden;
+    }
+    #img0{
+        height: 250px;
+        width: 100%;
+        overflow: hidden;
+    }
+    #img1{
+        max-width: none;
+        height: 250px;
+    }
+    .sousuo{
+        width: 90%;
+        height: 20%;
+        top: 70%;
+        left: 5%;
+        right: 5%;
+        font-size: 75%;
+    }
+    .destination img{
+        margin-left:20%;
+        margin-right:5%;
+        margin-bottom:5%;
+    }
+    .destination a{
+        line-height:50px;
+    }
+    .carousel-caption>h3{
+        font-size:20px;
+    }
+    .carousel-caption .p0{
+        display: none;
+    }
+    .carousel-caption .p1{
+        display:block;
+    }
+}
+/*机场接送*/
+.bus-service{
+    position:relative;
+    width:70%;
+    height:350px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.bus-service .left{
+    width:80%;
+    float:left;
+    height:100%;
+    background-image:url("../img/Sbanner2.jpg");
+}
+.bus-service .right{
+    width:20%;
+    height:100%;
+    float:left;
+    background-color: rgb(6, 67, 146);
+}
+.left .wenzi1{
+    position:absolute;
+    top:8%;
+    left:60%;
+    color:white;
+    font-size: 30px;
+}
+.left .wenzi2{
+    position: absolute;
+    top:24%;
+    left:60%;
+    font-size:15px;
+    color:white;
+}
+.bus-service .right img{
+    text-align: center;
+    margin-top:40%;
+    margin-left:25%;
+}
+.bus-service .right p{
+    text-align: center;
+    font-size:18px;
+    color:white;
+}
+.bus-service .right button{
+    width:100px;
+    height:30px;
+    color:white;
+    font-size:18px;
+    background-color: rgb(6, 67, 146);
+    margin-left:50px;
+    margin-top:25px;
+    border:1px solid white;
+    border-radius: 5px;
+}
+/* 热门线路 */
+.contain1{
+    width:75%;
+    height:900px;
+    margin:0 auto; 
+}
+.routes{
+    width:75%;
+    height:90px;
+    padding-top:10px;
+    margin:0 auto;
+}
+.routes p{
+    text-align: center;
+}
+.routes .p1{
+    font-size:20px;
+}
+#route{
+    height:810px;
+}
+#routeleft{
+    float:left;
+    height:810px;
+}
+#routeright{
+    float:left;
+    height:810px;
+}
+
+.rd1{
+    float:left;
+    width:100%;
+    height:50%;
+}
+.rd1 .img1{
+    float:left;
+    width:100%;
+    height:75%;
+}
+.rd1 .price1{
+    float:left;
+    width:100%;
+    height:25%;
+    padding:15px 30px;
+    background-color: black;
+    color:white;
+}
+.rd2{
+    width:100%;
+    height:50%;
+}
+.rd2 .img2{
+    float:left;
+    width:100%;
+    height:75%;
+}
+.rd2 .price2{
+    float:left;
+    width:100%;
+    height:25%;
+    padding:15px 30px;
+    background-color: black;
+    color:white;
+}
+#rdright{
+    width:50%;
+    height:100%;
+}
+.rd3{
+    width:100%;
+    height:30%;
+    position:relative;
+}
+.rd3 .img3{
+    width:100%;
+    height:100%;
+}
+.rd3 .price3{
+    position: absolute;
+    width:100%;
+    height:35%;
+    bottom:0;
+    background-color: black;
+    opacity: 0.5;
+    color:white;
+    padding:15px 30px;
+}
+.rd4{
+    position:relative;
+    width:100%;
+    height:35%;
+}
+.rd4 .img4{
+    width:100%;
+    height:100%;
+}
+.rd4 .price4{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:30%;
+    background-color: black;
+    opacity: 0.5;
+    color:white;
+    padding:15px 30px;
+}
+.rd5{
+    position:relative;
+    width:100%;
+    height:35%;
+}
+.rd5 .img5{
+    width:100%;
+    height:100%;
+}
+.rd5 .price5{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:30%;
+    background-color: black;
+    opacity: 0.5;
+    color:white;
+    padding:15px 30px;
+}
+
+/*签证推荐*/
+.contain2{
+    width:75%;
+    height:670px;
+    margin:0 auto; 
+}
+#visadvice{
+    width:75%;
+    height:120px;
+    margin:0 auto;
+    padding:15px 200px;
+}
+#visadvice p{
+    text-align: center;
+    color:black;
+}
+#visa{
+    height:530px;
+    margin:0 auto;
+}
+#vdleft{
+    height:100%;
+    float:left;
+}
+#vdmidl{
+    height:100%;
+    float:left;
+}
+.vd1{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+#visa .img5{
+    width:100%;
+    height:100%;
+}
+.vd1 .price1{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:10%;
+    padding:5px 32px;
+    background-color: black;
+    opacity: 0.5;
+}
+#visa p{
+    color:white;
+}
+#vdright{
+    float:left;
+    height:100%;
+}
+.vd2{
+    float:left;
+    position:relative;
+    width:100%;
+    height:50%;
+    margin-left:3px;
+}
+#visa .price5{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:20%;
+    padding:5px 30px;
+    background-color: black;
+    opacity: 0.5;
+}
+.vd3{
+    position:relative;
+    width:100%;
+    height:50%;
+    margin-left:3px;
+}
+.vd4{
+    float:left;
+    position:relative;
+    width:100%;
+    height:49%;
+    margin-left:3px;
+    margin-top:3px;
+}
+.vd5{
+    position:relative;
+    width:100%;
+    height:49%;
+    margin-left:3px;
+    margin-top: 3px;
+}
+/* 使命愿景 */
+#wishes{
+    width:100%;
+    height:1380px;
+    margin:0 auto;
+    background:url("../img/back.png") no-repeat;
+}
+.context{
+    width:75%;
+    height:100%;
+    margin: 0 auto;
+}
+.text1{
+    float:left;
+    width:100%;
+    height:150px;
+    padding-top:50px;
+    text-align: center;
+}
+.text1 .ptop{ 
+    font-size:20px;
+}
+.text1 .pbott{
+    font-size:13px;
+}
+.text2{
+    float:left;
+    width:100%;
+    height:357px;
+    padding-right:0;
+}
+.row{
+    width:100%;
+    height:100%;
+}
+#logo2{
+    padding-right:0;
+    height:100%;
+}
+#logo2 img{
+    width:100%;
+    height:100%;
+}
+#intro{
+    height:100%;
+    color:white;
+    background-color:#0e4272;
+    opacity: 0.8;
+}
+#intro h4{
+    padding-top:80px;
+    text-align:center;
+}
+#intro p{
+    padding:30px 65px;
+}
+.text3{
+    float:left;
+    width:100%;
+    height:475px;
+    padding-right:15px;
+}
+.text3 img{
+    width:100%;
+    height:100%;
+}
+.text4{
+    float:left;
+    width:99%;
+    height:400px;
+    padding-right:0;
+    background-color:#0e4272;
+}
+#text5{
+    width:80%;
+    height:80%;
+    margin:5% 10%;
+}
+.col1,.col2,.col3{
+    height:100%;
+}
+.colimg{
+    position:relative;
+    width:100%;
+    height:70%;
+    padding:5%;
+}
+.imgb{
+    position: absolute;
+    left:10%;
+    top:5%;
+}
+.imgc{
+    position:absolute;
+    top:32%;
+    left:35%;
+}
+.imgp{
+    position:absolute;
+    top:65%;
+    left:32%;
+    color:white;
+    font-size:18px;
+}
+.font{
+    width:100%;
+    height:20%;
+    font-size:15px;
+    color:white;
+}
+.fontp0{
+    margin-left:32%;
+}
+.fontp{
+    margin-left:15%;
+}
+/* 底栏 */
+.footerb{
+	width: 100%;
+	height: 410px;
+    border-top: 1px solid #fff;
+    background-color: #000;
+    margin: 0 auto;
+}
+.footer02{
+	width: 1200px;
+	height: 410px;
+	padding-bottom: 45px;
+	padding-top: 45px;
+	margin: 0 auto;
+}
+.footer021{
+	width: 1200px;
+	height: 70px;
+	margin-bottom: 40px;
+}
+#footer021div{
+	font-size: 18px;
+	float: left;
+    margin-right: 25px;
+    margin-left: 40px;
+	height: 70px;
+	color: #ffffff;
+}
+.footer021 div{
+	font-size: 18px;
+	float: left;
+	margin-right: 15px;
+	height: 70px;
+	color: #ffffff;
+	width: 110px;
+}
+.footer021 div p{
+	width: 110px;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 14px;
+}
+#footer021diva{
+	width: 73px;
+}
+.footer022{
+	width: 1200px;
+	height: 65px;
+	margin-bottom:10px;
+}
+.footer022 div{
+	font-size: 18px;
+	float: left;
+	margin-right: 25px;
+	color: #ffffff;
+	height: 65px;
+}
+.footer022 li{
+	margin-bottom:15px;
+	font-size: 14px;
+	float: left;
+	margin-right: 15px;
+	color: #ffffff;
+}
+.footer024{
+	width: 1200px;
+	height: 30px;
+	margin-bottom:15px;
+}
+.footer024 div{
+	font-size: 18px;
+	float: left;
+	margin-right: 25px;
+	color: #ffffff;
+	height: 30px;
+}
+.footer024 li{
+	margin-bottom:15px;
+	font-size: 14px;
+	float: left;
+	margin-right: 15px;
+	color: #ffffff;
+}
+.footer023{
+	width: 1200px;
+	height: 65px;
+	margin-bottom:10px;
+}
+.footer023 div{
+	font-size: 18px;
+	float: left;
+	margin-right: 25px;
+	color: #ffffff;
+	height: 65px;
+}
+.footer023 li{
+	/*margin-bottom:15px;*/
+	margin-bottom: 15px;
+	font-size: 14px;
+	float: left;
+	margin-right: 15px;
+	color: #ffffff;
+}
+.footerc{
+	width: 100%;
+    border-top: 1px solid #fff;
+    background-color: #000;
+}
+.footer03{
+    padding:30px;
+} 
+.footerc p{
+	text-align: center;
+	font-size: 16.13px;
+	color: #ffffff;
+	line-height: 20px;
+}
+@media (max-width: 750px){
+    .footer{
+        width:100%;
+    }
+    .footerb{
+        display: none;
+    }
+    .footerc{
+        float:left;
+        height: 250px;
+    }
+    .footer03{
+        padding-top:80px;
+        margin: 0 auto;
+    }
+    .bom p{
+        float: none;
+    }
+    #zhichi{
+        display: block;
+    }
+}
+
+/*媒体查询*/
+@media screen and (min-width:750px) and (max-width:1600px){
+    .navbar-btn{
+        display:none;
+    }
+    .bus-service2{
+        display:none;
+    }
+    .contain1 .routes1{
+        display:none;
+    }
+    body{
+        overflow-x: hidden;
+        background-color:rgb(245, 240, 240);
+    }
+    .part{
+        display: none;
+    }
+    .morebtn{
+        display: none;
+    }
+    .visadvice1{
+        display:none;
+    }
+    .vd45{
+        display: none;
+    }
+    .free{
+        width:100%;
+        height:345px;
+        margin-top:200px;
+    }
+    .free img{
+        width:100%;
+        height:100%;
+    }
+    .text11{
+        display:none;
+    }
+    .morebtn0{
+        width:100%;
+        height:220px;
+        margin:0 auto;
+    }
+    .morebtn0 button{
+        width:220px;
+        height:50px;
+        margin:8% 42%;
+        font-size:20px;
+        border:1px solid black;
+        border-radius: 8px;
+    }
+    .text44{
+        display:none;
+    }
+}
+
+@media screen and (max-width:750px){
+    .header{
+        display:none;
+    }
+    #top1{
+        top:0;
+    }
+    .wrapper{
+        padding-bottom:50px;
+    }
+    .navbar-btn{
+        display:block;
+    }
+    #routeright{
+        display:none;
+    }
+    .bus-service{
+        display:none;
+    }
+    .bus-service2{
+        width:100%;
+        height:150px;
+        margin:0 auto;
+        margin-bottom:12px;
+    }
+    .bus-service3{
+        width:80%;
+        height:90%;
+        margin:0 auto;
+        padding-top:7%;
+    }
+    .contain1{
+        width:90%;;
+        height:1000px;
+    }
+    .contain2{
+        width:90%;
+    }
+    .logo1{
+        float: left;
+        width:25%;
+        height:75%;
+    }
+    .bus-service2 .wenzi{
+        float:left;
+        width:50%;
+        height:12%;
+    }
+    .bus-service2 .wenzi1{
+        color:#1c5080;
+        font-size: 20px;
+    }
+    .bus-service2 button{
+        width:25%;
+        height:30%;
+        color:#666666;
+        font-size:16px;
+        margin-top:5%;
+        border:1px solid #666666;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    .part{
+        width:100%;
+        height:15px;
+        background-color:rgb(235, 231, 231);
+    }
+    .contain1{
+        background-color: #fff;
+    }
+    .contain1 .rd1{
+        margin-bottom:15px;
+    }
+    .routes{
+        display:none;
+    }
+    .contain1 .routes1{
+        width:150px;
+        height:40px;
+        margin-left:2px;
+        margin-top:15px;
+    }
+    .contain1 .routes1 p{
+        font-size:18px;
+        padding-left:8px;
+        border-left:3px solid rgb(243, 77, 12);
+    }
+    .morebtn0{
+        display:none;
+    }
+    .morebtn{
+        width:100%;
+        height:120px;
+        margin:0 auto;
+    }
+    .morebtn button{
+        width:160px;
+        height:40px;
+        margin:12% 30%;
+        border:1px solid #666666;
+        border-radius: 5px;
+        background-color: #fff;
+        color:#666666;
+        font-size:20px;
+    }
+    .morebtn button img{
+        margin-left:15px;
+    }
+    #visadvice{
+        display:none;
+    }
+    .contain2{
+        height:520px;
+    }
+    .contain2 .visadvice1{
+        width:150px;
+        height:40px;
+        margin-left:2px;
+        margin-top:15px;
+    }
+    .contain2 .visadvice1 p{
+        font-size:18px;
+        padding-left:8px;
+        border-left:3px solid rgb(243, 77, 12);
+    }
+    #visa{
+        height:320px;
+    }
+    .vd3,.vd4,.vd5,#vdright{
+        display:none;
+    }
+    .vd45{
+        float:left;
+        position:relative;
+        width:100%;
+        height:49%;
+        margin-left:3px;
+        margin-top: 4px;
+        display:block;
+    }
+    .free{
+        display: none;
+    }
+    #wishes{
+        height:1130px;
+    }
+    .context{
+        width:90%;
+    }
+    .text1{
+        display:none;
+    }
+    #logo2{
+        height:58%;
+    }
+    #intro{
+        height:42%;
+        background:transparent;
+        color:black;
+        padding-right:0;
+    }
+    #intro h4{
+        padding-top:5%;
+        text-align:center;
+    }
+    #intro p{
+        padding:0;
+    }
+    .text11{
+        width:100%;
+        height:40px;
+        margin-left:2px;
+        margin-top:15px;
+    }
+    .text11 p{
+        font-size:18px;
+        padding-left:8px;
+        border-left:3px solid rgb(243, 77, 12);
+    }
+    .text3{
+        height:220px;
+        margin-top:15px;
+    }
+    .text4{
+        display:none;
+    }
+    .text44{
+        float:left;
+        height:480px;
+        width:100%;
+        color:black;
+    }
+    .strength{
+        width:100%;
+        height:5%;
+        padding:10% 37%;
+        background-color: #fff;
+    }
+    .row3,.row1,.row2{
+        position: relative;
+        width:100%;
+        height:20%;
+        background-color: #fff;
+    }
+    .rowimg{
+        position: absolute;
+        left:8%;
+        top:25%;
+    }
+    .font33,.font22,.font11{
+        position: absolute;
+        left:30%;
+        top:25%;
+    }
+    .route{
+        padding:0;
+    }
+}
