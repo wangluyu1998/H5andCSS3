@@ -97,7 +97,7 @@ export default class Detail extends Component {
                             <li style={{overflow:'hidden'}}>
                                 {
                                     item.mimage === '' ? 
-                                <img src='images/logo.png' style={{width:'60px',height:'40px'}}/> :
+                                <img src='./images/logo.png' style={{width:'60px',height:'40px'}}/> :
                                 <img src={`http://116.62.14.0:8402/images/${item.mimage}`} style={{width:'50px',height:'30px'}}/>
                                 }
                             </li>

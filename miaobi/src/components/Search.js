@@ -18,8 +18,8 @@ export default class Search extends Component {
                     paddingLeft:'28px',backgroundColor:'#fff'}}
                     />
                     </Link>
-                    <img src='images/search.png' style={{position:'absolute',width:'22px',height:'22px',top:'89px',left:'357px'}}/>
-                    <img src='images/msg.png' style={{position:'absolute',width:'25px',height:'25px',right:'30px'}}/>
+                    <img src='./images/search.png' style={{position:'absolute',width:'22px',height:'22px',top:'89px',left:'357px'}}/>
+                    <img src='./images/msg.png' style={{position:'absolute',width:'25px',height:'25px',right:'30px'}}/>
                 </div>
             </div>
         )

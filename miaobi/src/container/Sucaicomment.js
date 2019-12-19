@@ -55,7 +55,7 @@ export default class Sucaicomment extends Component {
             <div>
                 <div style={{width:'150px',height:'28px',fontSize:'15px',color:'black',margin:'15px 0 0 20px',lineHeight:'20px'}}>
                 <a href='#/home/comment'  style={{color:'black'}}>
-                    <img src='images/return.png' alt='' style={{float:'left',width:'20px',height:'20px'}}/>
+                    <img src='./images/return.png' alt='' style={{float:'left',width:'20px',height:'20px'}}/>
                     返回上一页
                 </a>
                 </div>
